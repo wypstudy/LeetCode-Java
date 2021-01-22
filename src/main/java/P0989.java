@@ -9,12 +9,10 @@ import java.util.List;
  **/
 public class P0989 {
     public List<Integer> addToArrayForm(int[] A, int K) {
-        LinkedList<Integer> ans = new LinkedList<Integer>();
+        LinkedList<Integer> ans = new LinkedList<>();
         int ansLen = 10001;
         int[] ansArr = new int[ansLen];
-        for (int i = 0; i < A.length; i++) {
-            ansArr[ansLen - A.length + i] = A[i];
-        }
+        System.arraycopy(A, 0, ansArr, ansLen - A.length, A.length);
         int j = ansLen-1;
         ansArr[j] += K;
         while (j > 0 && ansArr[j] > 9) {
