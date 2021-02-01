@@ -1,3 +1,5 @@
+package Problem.P1600T1699;
+
 import java.util.ArrayList;
 
 /*******************************************
