@@ -7,7 +7,7 @@ package Problem.P0100T0199;
  * 设 dp[i][j]表示s到第i个字符为止,t到第j个字符为止的匹配数
  * 有状态转移方程
  * 当 s[i] = t[j], dp[i][j] = dp[i-1][j-1] + dp[i-1][j]
- * 当 s[i] != t[j], dp[i][j] = dp[i-1]
+ * 当 s[i] != t[j], dp[i][j] = dp[i-1][j]
  * 边界条件为j=0的时候t为空串,i的所有值都含有该字串即 dp[i][0]=1
  */
 public class P0115 {
