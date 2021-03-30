@@ -17,7 +17,6 @@ public class P0074 {
         if (x >= 0)
             return true;
         else {
-            System.out.println(x);
             x = -x - 2;
             int[] cols = matrix[x];
             int y = Arrays.binarySearch(cols, target);
